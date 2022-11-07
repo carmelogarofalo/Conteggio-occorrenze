@@ -5,9 +5,10 @@ Il programma prende in input una serie di percorsi di file testuali e per ciascu
 Per ogni file, il conteggio viene effettuato da un apposito task e tutti i task attivati vengono gestiti tramite un pool di thread. 
 I task registrano i loro risultati parziali all'interno di una ConcurrentHashMap. 
 Prima di terminare, il programma stampa su un apposito file di output il numero di occorrenze di ogni carattere. 
+
 Il file di output contiene una riga per ciascun carattere ed è formattato come segue:
 
-  <carattere 1>,<numero occorrenze>
-  <carattere 2>,<numero occorrenze>
-  ...
-  <carattere N>,<numero occorrenze>
+- carattere 1,numero occorrenze
+- carattere 2,numero occorrenze
+- ...
+- carattere N,numero occorrenze
